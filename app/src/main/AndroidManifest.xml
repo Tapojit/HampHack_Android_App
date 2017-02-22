@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tapojit.hamphack">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Authentication"
+            android:label="@string/title_activity_authentication"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapojit.hamphack.MainActivity" />
+        </activity>
+        <activity
+            android:name=".What_You_Can_Do"
+            android:label="@string/title_activity_what__you__can__do"
+            android:parentActivityName=".Authentication">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.tapojit.hamphack.Authentication" />
+        </activity>
+        <activity android:name=".Splash"
+            android:noHistory="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+        <service
+            android:name=".NotificationService">
+        </service>
+        <receiver android:name=".Receiver">
+            <intent-filter>
+                <action android:name="NoDeath">
+
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

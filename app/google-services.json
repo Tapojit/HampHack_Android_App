@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "721903900140",
+    "firebase_url": "https://hello-world-d1075.firebaseio.com",
+    "project_id": "hello-world-d1075",
+    "storage_bucket": "hello-world-d1075.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721903900140:android:c8c4293320ab681e",
+        "android_client_info": {
+          "package_name": "com.example.tapojit.hamphack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721903900140-id20u9aj6us0u6p5u36m19evd5di68rl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tapojit.hamphack",
+            "certificate_hash": "839CAF9180D0FE9FC104585D142B4834F71C19ED"
+          }
+        },
+        {
+          "client_id": "721903900140-sdq3knt4us1fvsslp0ipd1j3pk7uv9is.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9fyNFGTPKOk28Z9dTD2u6Uf-CbDOMrvE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721903900140-sdq3knt4us1fvsslp0ipd1j3pk7uv9is.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

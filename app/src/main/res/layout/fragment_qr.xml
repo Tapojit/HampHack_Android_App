@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    tools:context="com.example.tapojit.hamphack.QR">
+    <ImageView android:id="@+id/qr"
+        android:layout_marginTop="10dp"
+        android:layout_height="231dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="231dp" />
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/feeds_forecast2"
+        android:textColor="@color/Black"
+        android:divider="@color/Grey_prim"
+        android:dividerHeight="2px"/>
+</LinearLayout>
