@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/White"
     android:orientation="vertical"
-    tools:context="com.example.tapojit.hamphack.QR">
+    tools:context="com.hampshire.tapojit.hamphack.QR">
     <ImageView android:id="@+id/qr"
         android:layout_marginTop="10dp"
         android:layout_height="231dp"
