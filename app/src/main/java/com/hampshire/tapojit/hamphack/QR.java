@@ -91,7 +91,7 @@ public class QR extends Fragment {
 
         final ArrayAdapter<String> mtickets;
 
-        final DatabaseReference tickets= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/QR");
+        final DatabaseReference tickets= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
         Log.v("fb","firebase loaded");
         String[] ticketLabel={"Registration",
                 "Idea Jam (6:45pm)",
@@ -239,7 +239,7 @@ public class QR extends Fragment {
                             if (num>0){
                                 qrCodeGenerator(ind,data,frame.getMeasuredHeight());
                                 num--;
-                                FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/QR").child(ind).setValue(num);
+                                FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref").child(ind).setValue(num);
                                 try {
                                     Bitmap b = BitmapFactory.decodeStream(new FileInputStream(f));
                                     frame.setImageBitmap(b);
@@ -276,28 +276,7 @@ public class QR extends Fragment {
 
 
 
-//        Button web=(Button) rootView.findViewById(R.id.web);
-//        web.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//                Intent browserIntent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://hamphack.hampshire.edu"));
-//                startActivity(browserIntent);
-//            }
-//        });
-//        View v=(View) rootView.findViewById(R.id.v3);
-//        v.setBackground(getResources().getDrawable(R.drawable.rec_undr));
-//        Button feed=(Button) rootView.findViewById(R.id.feeds);
-//        Button qr=(Button) rootView.findViewById(R.id.qrtickets);
-//        qr.setBackground(getResources().getDrawable(R.drawable.qr_f));
-//
-//        feed.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//                Intent feedIntent=new Intent(getActivity(),MainActivity.class);
-//                startActivity(feedIntent);
-//                getActivity().overridePendingTransition(R.transition.backb1,R.transition.backb2);
-//            }
-//        });
+
 
 
 
