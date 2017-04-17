@@ -34,10 +34,10 @@ public class NotificationService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, final int flags, int startId) {
-        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Feeds");
-        final DatabaseReference databaseReferenceurl= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/FeedsURL");
-        DatabaseReference icon= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Icon");
-        DatabaseReference announ= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Announcements");
+        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+        final DatabaseReference databaseReferenceurl= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+        DatabaseReference icon= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+        DatabaseReference announ= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
 
 
         final List<String> d2=new ArrayList<String>();
@@ -165,28 +165,3 @@ public class NotificationService extends Service {
 }
 
 
-//    @Override
-//    public void onMessageReceived(RemoteMessage remoteMessage) {
-//        sendNotification(remoteMessage.getNotification().getBody());
-//    }
-//
-//    private void sendNotification(String messageBody) {
-//        Intent intent = new Intent(this, MainActivity.class);
-//        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0 /* Request code */, intent,
-//                PendingIntent.FLAG_ONE_SHOT);
-//
-//        Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-//        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
-//                .setSmallIcon(R.drawable.hh_logo_bckgrnd)
-//                .setContentTitle("HampHack")
-//                .setContentText(messageBody)
-//                .setAutoCancel(true)
-//                .setSound(defaultSoundUri)
-//                .setContentIntent(pendingIntent);
-//
-//        NotificationManager notificationManager =
-//                (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-//
-//        notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
-//    }
