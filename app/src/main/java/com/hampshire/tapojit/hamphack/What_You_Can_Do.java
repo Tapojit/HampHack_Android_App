@@ -126,16 +126,16 @@ public class What_You_Can_Do extends ActionBarActivity {
                                 .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialog, int which) {
-                                        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Feeds");
-                                        DatabaseReference databaseReferenceurl= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/FeedsURL");
-                                        final DatabaseReference icon= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Icon");
+                                        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+                                        DatabaseReference databaseReferenceurl= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+                                        final DatabaseReference icon= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
                                         icon.addListenerForSingleValueEvent(new ValueEventListener() {
                                             @Override
                                             public void onDataChange(DataSnapshot dataSnapshot) {
                                                 Double d1=Double.parseDouble(dataSnapshot.getChildren().iterator().next().getKey());
                                                 EditText t1=(EditText)l1.getChildAt(1).findViewById(R.id.fill);
                                                 String s=t1.getText().toString();
-                                                FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Icon").child(Double.toString(d1-1)).setValue(s);
+                                                FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref").child(Double.toString(d1-1)).setValue(s);
                                             }
 
                                             @Override
@@ -149,7 +149,7 @@ public class What_You_Can_Do extends ActionBarActivity {
                                                 Double d1=Double.parseDouble(dataSnapshot.getChildren().iterator().next().getKey());
                                                 EditText t1=(EditText)l1.getChildAt(0).findViewById(R.id.fill);
                                                 String s=t1.getText().toString();
-                                                FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/FeedsURL").child(Double.toString(d1-1)).setValue(s);
+                                                FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref").child(Double.toString(d1-1)).setValue(s);
                                             }
 
                                             @Override
@@ -163,7 +163,7 @@ public class What_You_Can_Do extends ActionBarActivity {
                                                 Double d1=Double.parseDouble(dataSnapshot.getChildren().iterator().next().getKey());
                                                 EditText t1=(EditText)l1.getChildAt(2).findViewById(R.id.fill);
                                                 String s=t1.getText().toString();
-                                                FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Feeds").child(Double.toString(d1-1)).setValue(s);
+                                                FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref").child(Double.toString(d1-1)).setValue(s);
                                             }
 
                                             @Override
@@ -206,8 +206,8 @@ public class What_You_Can_Do extends ActionBarActivity {
             } else {
                 if(result.getContents().equals("Ticket2")||result.getContents().equals("Ticket3")) Toast.makeText(this,"Approved!",Toast.LENGTH_LONG).show();
                 else {
-                    DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Participants");
-                    DatabaseReference databaseReference2= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/ParticipantsPresent");
+                    DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+                    DatabaseReference databaseReference2= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
 
                     FirebaseListAdapter<String> participants=new FirebaseListAdapter<String>(this,String.class,android.R.layout.simple_list_item_1,databaseReference) {
                         @Override
