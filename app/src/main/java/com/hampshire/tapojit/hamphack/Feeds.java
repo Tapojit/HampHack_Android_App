@@ -43,9 +43,9 @@ public class Feeds extends Fragment {
 
 
 
-        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Feeds");
-        DatabaseReference databaseReferenceurl=FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/FeedsURL");
-        DatabaseReference icon=FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Icon");
+        DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+        DatabaseReference databaseReferenceurl=FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
+        DatabaseReference icon=FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
 
         final FirebaseListAdapter<String> firebaseListAdapterurl=new FirebaseListAdapter<String>(
                 getActivity(),
@@ -105,58 +105,6 @@ public class Feeds extends Fragment {
         listView.setAdapter(firebaseListAdapter);
 
 
-//        databaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-////                List<String> d1=dataSnapshot.getValue(List.class);
-//                DBHelper helper=new DBHelper(getActivity(),null,null,1);
-//                if (helper.containsDetail(firebaseListAdapter.getItem(0))==false){
-//                for(int i=0;i<firebaseListAdapter.getCount();i++){
-//                    if (helper.containsDetail(firebaseListAdapter.getItem(i))==false){
-//                        Notifications n1=new Notifications(firebaseListAdapter.getItem(i));
-//                        helper.addDetail(n1);
-//
-//                        NotificationCompat.Builder notification=new NotificationCompat.Builder(getActivity());
-//                        notification.setAutoCancel(true);
-//                        notification.setSmallIcon(R.drawable.hh_logo_bckgrnd);
-//                        notification.setTicker("This is the ticker");
-//                        notification.setWhen(System.currentTimeMillis());
-//                        notification.setContentTitle("You have a new notification!");
-//                        notification.setContentText(firebaseListAdapter.getItem(i));
-//                        notification.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
-//                        notification.setVibrate(new long[] {1000, 1000, 1000, 1000});
-//
-//                        if (firebaseListAdapterurl.getItem(i).equals("null")){
-//                            Intent intent=new Intent(getActivity(),MainActivity.class);
-//                            PendingIntent pendingIntent=PendingIntent.getActivity(getActivity(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
-//                            notification.setContentIntent(pendingIntent);
-//                        }
-//                        else {
-//                            Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse(firebaseListAdapterurl.getItem(i)));
-//                            PendingIntent pendingIntent=PendingIntent.getActivity(getActivity(),0,intent,PendingIntent.FLAG_UPDATE_CURRENT);
-//                            notification.setContentIntent(pendingIntent);
-//                        }
-//                        Random r= new Random();
-//                        int n=r.nextInt(1000)+1;
-//                        NotificationManager nm=(NotificationManager) getActivity().getSystemService(NOTIFICATION_SERVICE);
-//                        nm.notify(n,notification.build());
-//
-//
-//
-//                    }
-//                    else break;
-//                }}
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-
-
-
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -170,7 +118,7 @@ public class Feeds extends Fragment {
         final TextView t1=(TextView) rootView.findViewById(R.id.announce1s);
 
         final TextView t2=(TextView) rootView.findViewById(R.id.announce1e);
-        DatabaseReference ann=FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Announcements");
+        DatabaseReference ann=FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
 
         ann.addValueEventListener(new ValueEventListener() {
             @Override
@@ -222,7 +170,7 @@ public class Feeds extends Fragment {
 
         final ImageView emoji=(ImageView) rootView.findViewById(R.id.emoji);
 
-        DatabaseReference pic=FirebaseDatabase.getInstance().getReferenceFromUrl("https://hello-world-d1075.firebaseio.com/HampHack/Emoji");
+        DatabaseReference pic=FirebaseDatabase.getInstance().getReferenceFromUrl("DB_ref");
 
         pic.addValueEventListener(new ValueEventListener() {
             @Override
