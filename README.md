@@ -15,8 +15,13 @@ Creates and internally stores generated QR images for registration and workshops
 **Website-**
 An external intent to HampHack Website
 
+![Alt text](https://lh3.googleusercontent.com/bXsdg6LJZZJdc6hqbEm8GsBkI6zskDpul7pxR98Q6yTxdS9wC0iLJu9TkBqpKgZ7dA=h900-rw "Optional text")
+
 **Authentication-**
 Accessed through menu item **For organizers only**. Has email and password authentication exclusive only to event organizers. Successful authentication opens a new fragment **What_You_Can_Do**.
+
+
+![Alt text](https://lh3.googleusercontent.com/7PQEK99NEIqARoHzs5bq325c3_Lm_wy2KVVF78D5WikJP6zr3Vv1r1ZiOg9_wSLZ8bc=h900-rw "Optional text")
 
 **What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets of participants to verify against Firebase database. Feed populator is for inputting details concerning marketing, social media. Appear in feeds.
 
