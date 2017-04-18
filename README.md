@@ -4,7 +4,7 @@ This is an android app dedicated to the event HampHack, a yearly hackathon event
 # Fragments
 **Feeds-** Contains social media news for event and will display important announcements during the event. Push notifications activated for both. A timer counts down to the event's start. Another timer will start at the beginning of the event until it is over. 
 
-![Alt text](https://lh3.googleusercontent.com/t3GxUmiKBppdrcwZ9GepSU-wwZ5q9e8lNOOJhHmtEhOq1hzWCUOBZ0h2rFkKc2u5zokQ=h310-rw "Optional text")
+![Alt text](https://lh3.googleusercontent.com/t3GxUmiKBppdrcwZ9GepSU-wwZ5q9e8lNOOJhHmtEhOq1hzWCUOBZ0h2rFkKc2u5zokQ=h900-rw "Optional text")
 
 **QR code-**
 Creates and internally stores generated QR images for registration and workshops. Number of workshop tickets generated is kept track of in Firebase database. Such tickets can be verified using built-in scanner in **What_You_Can_Do** fragment.
