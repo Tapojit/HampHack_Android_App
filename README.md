@@ -9,6 +9,10 @@ This is an android app dedicated to the event HampHack, a yearly hackathon event
 **QR code-**
 Creates and internally stores generated QR images for registration and workshops. Number of workshop tickets generated is kept track of in Firebase database. Such tickets can be verified using built-in scanner in **What_You_Can_Do** fragment.
 
+![Alt text](https://lh3.googleusercontent.com/zfuqAuLp5SbKI1JDLWMGdFrBtRulOMjRV35n6IDBdSAlTHNUW87VEWXH-0MXRoTtW0gS=h310-rw "Optional text")
+
+![Alt text](https://lh3.googleusercontent.com/1HhkObDskZeJTLMMevjpsJ12nfWQ1zwTxvToWszqSQOf71MZTNWgP501cQyGIt6Nl1o=h310-rw "Optional text")
+
 **Website-**
 An external intent to HampHack Website
 
