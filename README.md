@@ -1,5 +1,5 @@
 # HampHack_Android_App
-This is an android app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication(For event organizers only) is implemented in Firebase.
+This is an android app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication(For event organizers only) is implemented in Firebase. Link to download app: https://play.google.com/store/apps/details?id=com.hampshire.tapojit.hamphack
 
 # Fragments
 **Feeds-** Contains social media news for event and will display important announcements during the event. Push notifications activated for both. A timer counts down to the event's start. Another timer will start at the beginning of the event until it is over. 
