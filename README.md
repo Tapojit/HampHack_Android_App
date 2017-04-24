@@ -23,9 +23,8 @@ Accessed through menu item **For organizers only**. Has email and password authe
 
 ![Alt text](https://lh3.googleusercontent.com/7PQEK99NEIqARoHzs5bq325c3_Lm_wy2KVVF78D5WikJP6zr3Vv1r1ZiOg9_wSLZ8bc=h900-rw "Optional text")
 
-**What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets of participants to verify against Firebase database. Feed populator is for inputting details concerning marketing, social media. Appear in feeds.
+**What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets of participants to verify against Firebase database. Feed populator is for inputting details concerning marketing, social media. Appear in feeds.  
 
-![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t34.0-12/16443314_1203705506365264_26790229_n.png?oh=600f61deeded38a6f2227e79fcc24b2a&oe=58F8F83C "Optional text")
 
 # Important-Excluded Files and links:
 For security issues, **google-services.json** and links to firebase database have been excluded. Instantiation of references to this database have been commented out.
