@@ -25,7 +25,6 @@ Accessed through menu item **For organizers only**. Has email and password authe
 
 **What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets of participants to verify against Firebase database. Feed populator is for inputting details concerning marketing, social media. Appear in feeds.
 
-
 ![Alt text](https://scontent-lga3-1.xx.fbcdn.net/v/t34.0-12/16443314_1203705506365264_26790229_n.png?oh=600f61deeded38a6f2227e79fcc24b2a&oe=58F8F83C "Optional text")
 
 # Important-Excluded Files and links:
