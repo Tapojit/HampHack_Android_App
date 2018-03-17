@@ -25,7 +25,7 @@ Accessed through menu item **For organizers only**. Has email and password authe
 
 **What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets of participants to verify against Firebase database. Feed populator is for inputting details concerning marketing, social media. Appear in feeds.  
 
-![Alt text](https://raw.githubusercontent.com/Tapojit/HampHack_Android_App/master/wycando_and.png =506×900)
+<img src="https://raw.githubusercontent.com/Tapojit/HampHack_Android_App/master/wycando_and.png" alt="alt text" width="506" height="900">
 
 # Important-Excluded Files and links:
 For security issues, **google-services.json** and links to firebase database have been excluded. Instantiation of references to this database have been commented out.
