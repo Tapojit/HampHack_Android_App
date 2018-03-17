@@ -25,7 +25,7 @@ It can be accessed through menu item **For organizers only**. Allows email and p
 
 ![Alt text](https://lh3.googleusercontent.com/7PQEK99NEIqARoHzs5bq325c3_Lm_wy2KVVF78D5WikJP6zr3Vv1r1ZiOg9_wSLZ8bc=h900-rw "Optional text")
 
-**What_You_Can_Do-** Includes implementation of QR code scanner and Feed populator. QR code scanner scans QR tickets to verify against Firebase database. Feed populator allow organizers to post new announcements and feeds, which appear in **feeds**.  
+**What_You_Can_Do-** Allow organizers to scan QR tickets to verify against Firebase database. They can also update/add announcements and feeds.
 
 <img src="https://raw.githubusercontent.com/Tapojit/HampHack_Android_App/master/wycando_and.png" alt="alt text" width="506" height="900">
 
