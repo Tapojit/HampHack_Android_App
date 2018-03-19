@@ -1,4 +1,4 @@
-# HampHack_Android_App
+# Android HampHack App
 This is an android app dedicated to the event HampHack, a yearly hackathon event in Hampshire College. Backend database and authentication(For event organizers only) was implemented using *Firebase*. Link to download app from Google Play: https://play.google.com/store/apps/details?id=com.hampshire.tapojit.hamphack
 
 **[UPDATE]: This app in Google Play is disabled as of June 2017.**
